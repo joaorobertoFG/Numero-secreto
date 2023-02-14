@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root {
+    --font: 'Montserrat', sans-serif;
+    --cor-principal: #20262E;
+    --cor-bg: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+}
+
+body {
+    background-image: var(--cor-bg);
+    color: var(--cor-principal);
+    font-family: var(--font);
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.mensagem {
+    color: var(--cor-principal);
+    font-size: 1.5em;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+.box {
+    border: 2px solid var(--cor-principal);
+    font-size: 1.5em;
+    padding: .5em;
+    display: inline-block;
+    margin: .5em;
+    border-radius: 10px;
+}
+
+.btn-jogar {
+    font-family: var(--font);
+    background-color: cyan;
+    border: none;
+    margin-top: 2em;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: .4em;
+    transition: all 400ms;
+    border-radius: 10px;
+}
+
+.btn-jogar:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 400ms;
+}
+
+.vitoria {
+    background-color: red;
+}
